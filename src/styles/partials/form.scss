@@ -1,0 +1,240 @@
+.form {
+    display: block;
+    width: 100%;
+    max-width: 780px;
+
+    @media (min-width: 2501px) {
+        max-width: 54%;
+    }
+
+    @media (max-width: $tablets) {
+        max-width: none;
+    }
+
+    @media (min-width: 1700px) {
+        max-width: none;
+        width: 54%;
+    }
+
+    @media (min-width: 374px) and (max-width: 376px) {
+        width: 343px !important;
+    }
+
+    .container-form-inputs {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+
+        @media (min-width: $full) {
+            min-width: 1350px;
+        }
+
+        @media (max-width: $tablets) {
+            width: 100%;
+            max-width: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+        }
+
+        .container-input-image {
+            position: relative;
+            width: 100%;
+            max-width: 343px;
+            height: 212px;
+            border: 2px solid $grey-300;
+
+            border-radius: 8px;
+
+            @media (min-width: $full) {
+                max-width: 600px;
+                height: 400px;
+            }
+
+            @media (min-width: 2501px) {
+                max-width: 44%;
+                height: 400px;
+            }
+
+            @media (max-width: $tablets) {
+                height: 570px;
+                max-width: none;
+            }
+
+            @media (max-width: $phone) {
+                min-width: auto;
+                height: 212px;
+            }
+
+            .label-image {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: space-around;
+                cursor: pointer;
+            }
+
+            .form-imagem-input {
+                display: none;
+            }
+
+            .preview {
+                display: none;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+                border: none;
+                z-index: -999;
+            }
+        }
+
+        .form-inputs {
+            width: 100%;
+            max-width: 418px;
+
+            @media (min-width: $full) {
+                max-width: none;
+            }
+
+            @media (min-width: 1700px) {
+                max-width: none;
+            }
+
+            @media (max-width: $tablets) {
+                max-width: none;
+            }
+        }
+
+        .input-text-title {
+            width: 328px;
+            height: 56px;
+            border: 2px solid $grey-300;
+            border-radius: 8px;
+            padding: 16px;
+
+            @media (min-width: $full) {
+                width: 575px;
+                height: 64px;
+                font-size: 32px;
+            }
+
+            @media (min-width: $full) {
+                width: 80%;
+            }
+
+            @media (min-width: 1600px) {
+                width: 80%;
+            }
+
+            @media (max-width: $tablets) {
+                min-width: 100%;
+            }
+
+            @media (max-width: $phone) {
+                width: 100%;
+            }
+        }
+
+        .text-area-description {
+            border: 2px solid $grey-300;
+            border-radius: 8px;
+            width: 100%;
+            margin-top: 20px;
+            height: 136px;
+            padding: 40px 0 72px 20px;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            @media (min-width: $full) {
+                max-width: 725px;
+                height: 320px;
+                font-size: 32px;
+                margin-top: 16px;
+            }
+
+            @media (min-width: 2501px) {
+                width: 100%;
+                max-width: none;
+            }
+
+            @media (max-width: $tablets) {
+                margin-top: 19.43px;
+            }
+        }
+
+        .form-button {
+            display: grid;
+            justify-items: end;
+            margin-top: 16px;
+
+            @media (max-width: $tablets) {
+                margin-top: 26.21px;
+            }
+
+            .btn-form-submit {
+                background-color: $red-200;
+                padding: 16px 20px;
+                color: $white;
+                font-weight: 700;
+                line-height: 24px;
+                border-radius: 8px;
+                border: none;
+                height: 56px;
+                width: 121px;
+
+                @media (min-width: $full) {
+                    font-size: 32px;
+                    line-height: 48px;
+                    height: 80px;
+                    width: 201px;
+                }
+
+                @media (max-width: $tablets) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.label-image,
+.text-area-description::placeholder,
+.input-text-title::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.15px;
+    color: $grey-500;
+}
+
+@media (min-width: $full) {
+
+    .label-image,
+    .text-area-description::placeholder,
+    .input-text-title::placeholder {
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 400;
+        letter-spacing: 0.15px;
+        color: $grey-500;
+    }
+}
+
+@media (max-width: $phone) {
+
+    .form,
+    .form-inputs,
+    .container-input-image,
+    .btn-form-submit,
+    .text-area-description,
+    .input-text-title {
+        width: 100%;
+        max-width: none;
+    }
+}

@@ -1,0 +1,41 @@
+body,
+button {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    background: $white;
+}
+
+input,
+textarea,
+label,
+input::placeholder,
+textarea::placeholder,
+label::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: $grey-500;
+}
+
+textarea {
+    resize: none;
+}
+
+.paragraph-card::-webkit-scrollbar-track {
+    background-color: $grey-300;
+}
+.paragraph-card::-webkit-scrollbar {
+    width: 2px;
+    background-color: $grey-300;
+}
+
+.paragraph-card::-webkit-scrollbar-thumb {
+    background-color: $grey-700;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
