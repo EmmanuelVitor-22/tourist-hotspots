@@ -5,7 +5,7 @@ export class TouristSpots {
                 imageCard: "../img/cristo.jpg",
                 titleCard: "Cristo Redentor",
                 descriptionCard:
-                    "Imagem do Cristo redentor",
+                    "Erigido entre os anos 447 e 438 a.C. na Acrópole, o Partenon é um dos monumentos mais importantes da antiga civilização grega, além do edifício mais representativo de toda Grécia. \nConsagrado à deusa Atena Parthenos, o Partenon é um dos principais templos de construção dórica que se conservam, e também é o maior dos monumentos criados durante a época de Péricles."
             },
             {
                 imageCard: "../img/museu-do-louvre.jpg",
