@@ -35,9 +35,7 @@
             height: 780px;
         }
 
-        @media (min-width: 1441px) and (max-width: 2499px) {
-            // column-gap: 21px;
-        }
+
 
         @media (max-width: $tablets) {
             width: 100%;
@@ -46,7 +44,7 @@
         }
 
         .card {
-            // max-width: 279px;
+            // max-width: 279px !important;
             height: 424px;
             display: flex;
             border: none;
@@ -60,12 +58,12 @@
 
             @media (min-width: 2501px) {
                 width: 100%;
-                height: 768px;
+                // height: 768px;
             }
 
             @media (min-width: 2700px) {
                 width: 100%;
-                height: 768px;
+                // height: 768px;
             }
 
             @media (min-width: 1441px) and (max-width: 2499px) {
@@ -76,7 +74,7 @@
             @media (max-width: $tablets) {
                 width: 100%;
                 max-width: none;
-                height: 710px;
+                // height: 710px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -87,11 +85,12 @@
 
             @media (max-width: $phone) {
                 max-width: none;
-                height: 412px;
+                // height: 412px;
                 width: 100%;
             }
 
             .figure-card {
+
                 display: flex;
                 flex-direction: column;
                 border-radius: 8px;
@@ -187,7 +186,7 @@
                     }
 
                     .text-card {
-                        height: 60px;
+                        height: 40px;
                         margin: 0 24px;
                         margin-top: 24px;
                         font-weight: 700;
@@ -210,13 +209,14 @@
                             }
                         }
 
-                        @media (min-width: 1438px) and (max-width: 1442px) {
-                            overflow-y: auto;
+                        // @media (min-width: 1438px) and (max-width: 1442px) {
+                        overflow-y: auto;
 
-                            &::-webkit-scrollbar {
-                                width: 0;
-                            }
+                        &::-webkit-scrollbar {
+                            width: 0;
                         }
+
+                        // }
 
                         @media (min-width: 1023px) and (max-width: 1025px) {
                             overflow-y: auto;
@@ -231,6 +231,7 @@
                             margin: 0;
                             padding: 0 24px;
                             padding-top: 24px;
+
                             &::-webkit-scrollbar {
                                 width: 0;
                             }
@@ -238,7 +239,7 @@
 
                         @media (max-width: $tablets) {
                             min-width: 240px;
-                            height: 60px;
+                            height: 40px;
                             overflow-y: auto;
 
                             &::-webkit-scrollbar {
@@ -259,7 +260,7 @@
                     .paragraph-card {
                         font-family: "Roboto", sans-serif;
                         font-weight: 400;
-                        height: 96px;
+                        height: 130px;
                         min-width: 232px;
                         font-size: 16px;
                         line-height: 24px;
@@ -268,6 +269,13 @@
                         border: none;
                         margin: 0 24px;
                         margin-bottom: 24px;
+
+                        // colocar reticencias
+                        // display: -webkit-box;
+                        // -webkit-line-clamp: 4;
+                        overflow-y: auto;
+                        // -webkit-box-orient: vertical;
+
 
                         @media (min-width: $full) {
                             width: 100%;
@@ -278,10 +286,6 @@
                             padding: 0 24px;
                             padding-bottom: 24px;
                             overflow-y: auto;
-
-                            &::-webkit-scrollbar {
-                                width: 0;
-                            }
                         }
 
                         @media (min-width: 2501px) {
@@ -299,30 +303,26 @@
                         @media (max-width: $tablets) {
                             height: auto;
                             overflow-y: auto;
-
-                            &::-webkit-scrollbar {
-                                width: 1px;
-                            }
                         }
 
-                        @media (min-width: 1023px) and (max-width: 1025px) {
-                            overflow-y: auto;
+                        // @media (min-width: 1023px) and (max-width: 1025px) {
+                        //     overflow-y: auto;
 
-                            &::-webkit-scrollbar {
-                                width: 0;
-                            }
-                        }
+                        //     &::-webkit-scrollbar {
+                        //         width: 0;
+                        //     }
+                        // }
 
                         @media (min-width: 1025px) and (max-width: 1439px) {
                             margin: 0 24px;
                             margin-bottom: 24px;
                             overflow-y: auto;
                             min-width: 200px;
+                            overflow-y: auto;
                         }
 
                         @media (max-width: $phone) {
                             height: 72px;
-                            overflow: auto;
                             min-width: auto;
 
                             &::-webkit-scrollbar {
