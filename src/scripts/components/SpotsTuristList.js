@@ -11,7 +11,7 @@ export class TouristSpots {
                 imageCard: "../img/museu-do-louvre.jpg",
                 titleCard: "Museu do Louvre",
                 descriptionCard:
-                    "Imagem do museu do louvre a noite.",
+                    "Inaugurado a finais do século XVIII, o Museu do Louvre é o museu mais importante da França e um dos mais visitados do mundo. Atualmente recebe mais de oito milhões de visitantes a cada ano.",
             },
             {
                 imageCard: "../img/partenon.jpg",

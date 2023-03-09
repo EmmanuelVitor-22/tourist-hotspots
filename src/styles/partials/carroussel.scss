@@ -35,9 +35,7 @@
             height: 780px;
         }
 
-        @media (min-width: 1441px) and (max-width: 2499px) {
-            // column-gap: 21px;
-        }
+
 
         @media (max-width: $tablets) {
             width: 100%;
@@ -46,8 +44,8 @@
         }
 
         .card {
-            // max-width: 279px;
-            // height: 424px;
+            // max-width: 279px !important;
+            height: 424px;
             display: flex;
             border: none;
             border-radius: 8px;
@@ -92,6 +90,7 @@
             }
 
             .figure-card {
+
                 display: flex;
                 flex-direction: column;
                 border-radius: 8px;
@@ -261,7 +260,7 @@
                     .paragraph-card {
                         font-family: "Roboto", sans-serif;
                         font-weight: 400;
-                        // height: 96px;
+                        height: 130px;
                         min-width: 232px;
                         font-size: 16px;
                         line-height: 24px;
@@ -272,10 +271,10 @@
                         margin-bottom: 24px;
 
                         // colocar reticencias
-                        display: -webkit-box;
-                        -webkit-line-clamp: 4;
-                        overflow: hidden;
-                        -webkit-box-orient: vertical;
+                        // display: -webkit-box;
+                        // -webkit-line-clamp: 4;
+                        overflow-y: auto;
+                        // -webkit-box-orient: vertical;
 
 
                         @media (min-width: $full) {
@@ -286,30 +285,24 @@
                             line-height: 48px;
                             padding: 0 24px;
                             padding-bottom: 24px;
-                            display: -webkit-box;
-                            -webkit-line-clamp: 4;
-                            overflow: hidden;
-                            -webkit-box-orient: vertical;
+                            overflow-y: auto;
                         }
 
                         @media (min-width: 2501px) {
                             margin: auto;
                         }
 
-                        // @media (min-width: 1438px) and (max-width: 1442px) {
-                        //     overflow-y: auto;
+                        @media (min-width: 1438px) and (max-width: 1442px) {
+                            overflow-y: auto;
 
-                        //     &::-webkit-scrollbar {
-                        //         width: 0;
-                        //     }
-                        // }
+                            &::-webkit-scrollbar {
+                                width: 0;
+                            }
+                        }
 
                         @media (max-width: $tablets) {
                             height: auto;
-                            display: -webkit-box;
-                            -webkit-line-clamp: 3;
-                            overflow: hidden;
-                            -webkit-box-orient: vertical;
+                            overflow-y: auto;
                         }
 
                         // @media (min-width: 1023px) and (max-width: 1025px) {
@@ -325,32 +318,24 @@
                             margin-bottom: 24px;
                             overflow-y: auto;
                             min-width: 200px;
-                            display: -webkit-box;
-                            -webkit-line-clamp: 3;
-                            overflow: hidden;
-                            -webkit-box-orient: vertical;
+                            overflow-y: auto;
                         }
 
                         @media (max-width: $phone) {
                             height: 72px;
                             min-width: auto;
-                            // colocar reticencias
-                            display: -webkit-box;
-                            -webkit-line-clamp: 3;
-                            overflow: hidden;
-                            -webkit-box-orient: vertical;
 
-                            // &::-webkit-scrollbar {
-                            //     width: 1px;
-                            // }
+                            &::-webkit-scrollbar {
+                                width: 1px;
+                            }
 
-                            // @media (min-width: 374px) and (max-width: 376px) {
-                            //     overflow-y: auto;
+                            @media (min-width: 374px) and (max-width: 376px) {
+                                overflow-y: auto;
 
-                            //     &::-webkit-scrollbar {
-                            //         width: 0;
-                            //     }
-                            // }
+                                &::-webkit-scrollbar {
+                                    width: 0;
+                                }
+                            }
                         }
                     }
                 }
