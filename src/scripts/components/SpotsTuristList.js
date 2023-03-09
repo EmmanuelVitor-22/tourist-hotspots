@@ -2,26 +2,26 @@ export class TouristSpots {
     constructor() {
         this.listCard = [
             {
-                imageCard: "../svg/01-pao-de-acucar.svg",
-                titleCard: "Pão de Açúcar",
+                imageCard: "../img/cristo.jpg",
+                titleCard: "Cristo Redentor",
                 descriptionCard:
                     "Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa amet sint. Velit officia consece duis enim velit mollit.",
             },
             {
-                imageCard: "../svg/02-cristo-redentor.svg",
-                titleCard: "Cristo Redentor ",
+                imageCard: "../img/museu-do-louvre.jpg",
+                titleCard: "Museu do Louvre",
                 descriptionCard:
                     "Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa amet sint. Velit officia consece duis enim velit mollit.",
             },
             {
-                imageCard: "../svg/03-ilha-grande.svg",
-                titleCard: "Ilha Grande ",
+                imageCard: "../img/partenon.jpg",
+                titleCard: "Partenon",
                 descriptionCard:
                     "Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa amet sint. Velit officia consece duis enim velit mollit.",
             },
             {
-                imageCard: "../svg/04-centro-historico-parati.svg",
-                titleCard: "Centro Histórico de Paraty ",
+                imageCard: "../img/torre-eiffel.jpg",
+                titleCard: "Torre Eiffel",
                 descriptionCard:
                     "Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa amet sint. Velit officia consece duis enim velit mollit.",
             },
