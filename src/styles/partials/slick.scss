@@ -1,0 +1,107 @@
+.slick-track {
+    display: flex;
+    gap: 21px;
+    left: -41px;
+
+    @media (min-width: 2500px) {
+        left: -43px;
+    }
+
+    @media (min-width: 2501px) {
+        left: 0;
+    }
+
+
+    @media (min-width: 1442px) and (max-width: 2499px) {
+        left: 0;
+    }
+}
+
+.slick-prev {
+    left: -40.36px;
+    width: 13.64px;
+    height: 29.47px;
+
+    @media (min-width: $full) {
+        left: -80.72px;
+        width: 27.28px;
+        height: 58.94px;
+    }
+}
+
+.slick-next {
+    right: -40px;
+    width: 13.64px;
+    height: 29.47px;
+
+    @media (min-width: $full) {
+        right: -80px;
+        width: 27.28px;
+        height: 58.94px;
+    }
+}
+
+@media (min-width: $full) {
+    .slick-dots {
+        bottom: -62px;
+    }
+}
+
+.slick-dots li {
+    width: 10px;
+
+    @media (min-width: 2500px) {
+        width: 20px;
+    }
+}
+
+.slick-dots li button {
+    position: relative;
+    top: -25px;
+}
+
+.slick-dots li button:before {
+    top: 0;
+    left: 0px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.slick-dots li.slick-active button::before {
+    font-size: 17px;
+    opacity: 1;
+    color: transparent;
+    border: 0.5px solid $grey-500;
+    border-radius: 100%;
+    position: relative;
+    top: 7px;
+    left: -100%;
+
+    @media (min-width: 2500px) {
+        top: 100%;
+        left: -100%;
+        left: 0px;
+        width: auto;
+        height: auto;
+        content: "•";
+        text-align: center;
+        font-size: 27px;
+        height: 27px;
+        width: 27px;
+    }
+}
+
+.slick-dots li button::before {
+    font-size: 10px;
+    opacity: 1;
+    color: $grey-500;
+
+    @media (min-width: 2500px) {
+        top: 0;
+        left: 50%;
+        font-size: 20px;
+        height: 20px;
+        width: 20px;
+    }
+}

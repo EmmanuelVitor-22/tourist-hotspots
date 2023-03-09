@@ -1,0 +1,43 @@
+.tourist-spots-container {
+    max-width: 1440px;
+    margin: 0 130px;
+
+    @media (min-width: 1700px) {
+        max-width: 1920px;
+    }
+
+    @media (min-width: $full) {
+        max-width: none;
+    }
+
+    @media (max-width: $tablets) {
+        margin: 0;
+    }
+
+    .title-form {
+        margin: 40px 0;
+        font-size: 32px;
+        line-height: 38.4px;
+        width: 477px;
+        height: 38px;
+
+        @media (min-width: $full) {
+            font-size: 64px;
+            width: 100%;
+            min-width: 953px;
+            height: 77px;
+            line-height: 76.8px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: $phone) {
+            width: 100%;
+            max-width: 332px;
+            height: 76px;
+        }
+    }
+
+    @media (max-width: $tablets) {
+        padding: 16px;
+    }
+}

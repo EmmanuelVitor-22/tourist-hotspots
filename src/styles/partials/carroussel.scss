@@ -1,0 +1,361 @@
+.container-carroussel {
+    margin: 60px 0 166px;
+
+    @media (min-width: $full) {
+        margin: 76px 0 854px;
+    }
+
+    .carroussel-title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38.4px;
+        width: 283px;
+        height: 38px;
+
+        @media (min-width: $full) {
+            font-size: 64px;
+            width: 100%;
+            min-width: 283px;
+            height: 38px;
+        }
+
+        @media (max-width: $phone) {
+            width: 100%;
+        }
+    }
+
+    .container-row {
+        width: 100%;
+        height: 462px;
+        display: flex;
+        margin-top: 38px;
+        gap: 21px;
+
+        @media (min-width: $full) {
+            height: 780px;
+        }
+
+        @media (min-width: 1441px) and (max-width: 2499px) {
+            // column-gap: 21px;
+        }
+
+        @media (max-width: $tablets) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card {
+            // max-width: 279px;
+            height: 424px;
+            display: flex;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+
+            @media (min-width: $full) and (max-width: 2501px) {
+                width: 544px;
+                height: 768px;
+            }
+
+            @media (min-width: 2501px) {
+                width: 100%;
+                height: 768px;
+            }
+
+            @media (min-width: 2700px) {
+                width: 100%;
+                height: 768px;
+            }
+
+            @media (min-width: 1441px) and (max-width: 2499px) {
+                min-width: 279px;
+                max-width: none;
+            }
+
+            @media (max-width: $tablets) {
+                width: 100%;
+                max-width: none;
+                height: 710px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0px;
+                margin: 0;
+                margin-top: 24px;
+            }
+
+            @media (max-width: $phone) {
+                max-width: none;
+                height: 412px;
+                width: 100%;
+            }
+
+            .figure-card {
+                display: flex;
+                flex-direction: column;
+                border-radius: 8px;
+                align-items: center;
+                width: 100%;
+
+                @media (min-width: 2501px) {
+                    align-items: flex-start;
+                }
+
+                @media (min-width: 1441px) and (max-width: 2500px) {
+                    width: 100%;
+                    max-width: none;
+                }
+
+                @media (min-width: 1025px) and (max-width: 1439px) {
+                    max-width: none;
+                }
+
+                @media (max-width: $tablets) {
+                    width: 100%;
+                    max-width: none;
+                }
+
+                .image-item {
+                    display: block;
+                    width: 100%;
+                    height: 212px;
+                    border-radius: 8px;
+                    object-fit: cover;
+                    object-position: top;
+
+                    @media (min-width: $full) {
+                        // width: 544px;
+                        height: 400px;
+                    }
+
+                    @media (min-width: 2700px) {
+                        // min-width: none;
+                        // width: 100%;
+                        // min-width: 544px;
+                    }
+
+                    @media (min-width: 1441px) and (max-width: 2500px) {
+                        // width: 100%;
+                        max-width: none;
+                    }
+
+                    @media (max-width: $tablets) {
+                        // width: 100%;
+                        height: 570px;
+                    }
+
+                    @media (max-width: $phone) {
+                        height: 212px;
+                    }
+                }
+
+                .subtitle-container-carroussel-card {
+                    height: 212px;
+                    width: 231px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    border-radius: 8px;
+                    align-items: center;
+
+                    @media (min-width: $full) {
+                        width: 100%;
+                        min-width: 496px;
+                        height: 368px;
+                        justify-content: space-between;
+                    }
+
+                    @media (min-width: 2501px) {
+                        padding: 0 24px;
+                        align-items: baseline;
+                    }
+
+                    @media (min-width: 1441px) and (max-width: 2500px) {
+                        width: 100%;
+                        align-items: baseline;
+                    }
+
+                    @media (max-width: $tablets) {
+                        width: 100%;
+                        height: 140px;
+                        align-items: normal;
+                    }
+
+                    @media (max-width: $phone) {
+                        height: 188px;
+                    }
+
+                    .text-card {
+                        height: 60px;
+                        margin: 0 24px;
+                        margin-top: 24px;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 28px;
+                        color: $grey-700;
+                        min-width: 232px;
+                        overflow-wrap: anywhere;
+
+                        @media (min-width: $full) {
+                            font-size: 48px;
+                            line-height: 56px;
+                            min-width: 496px;
+                            height: 120px;
+                            padding: 0 24px;
+                            overflow-y: auto;
+
+                            &::-webkit-scrollbar {
+                                width: 0;
+                            }
+                        }
+
+                        @media (min-width: 1438px) and (max-width: 1442px) {
+                            overflow-y: auto;
+
+                            &::-webkit-scrollbar {
+                                width: 0;
+                            }
+                        }
+
+                        @media (min-width: 1023px) and (max-width: 1025px) {
+                            overflow-y: auto;
+
+                            &::-webkit-scrollbar {
+                                width: 0;
+                            }
+                        }
+
+                        @media (min-width: 1025px) and (max-width: 1340px) {
+                            overflow-y: auto;
+                            margin: 0;
+                            padding: 0 24px;
+                            padding-top: 24px;
+                            &::-webkit-scrollbar {
+                                width: 0;
+                            }
+                        }
+
+                        @media (max-width: $tablets) {
+                            min-width: 240px;
+                            height: 60px;
+                            overflow-y: auto;
+
+                            &::-webkit-scrollbar {
+                                width: 0;
+                            }
+                        }
+
+                        @media (min-width: 491px) and (max-width: 1023px) {
+                            height: auto;
+                        }
+
+                        @media (max-width: $phone) {
+                            min-width: auto;
+                            overflow-wrap: anywhere;
+                        }
+                    }
+
+                    .paragraph-card {
+                        font-family: "Roboto", sans-serif;
+                        font-weight: 400;
+                        height: 96px;
+                        min-width: 232px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: $grey-500;
+                        overflow-wrap: anywhere;
+                        border: none;
+                        margin: 0 24px;
+                        margin-bottom: 24px;
+
+                        @media (min-width: $full) {
+                            width: 100%;
+                            min-width: 496px;
+                            height: 192px;
+                            font-size: 32px;
+                            line-height: 48px;
+                            padding: 0 24px;
+                            padding-bottom: 24px;
+                            overflow-y: auto;
+
+                            &::-webkit-scrollbar {
+                                width: 0;
+                            }
+                        }
+
+                        @media (min-width: 2501px) {
+                            margin: auto;
+                        }
+
+                        @media (min-width: 1438px) and (max-width: 1442px) {
+                            overflow-y: auto;
+
+                            &::-webkit-scrollbar {
+                                width: 0;
+                            }
+                        }
+
+                        @media (max-width: $tablets) {
+                            height: auto;
+                            overflow-y: auto;
+
+                            &::-webkit-scrollbar {
+                                width: 1px;
+                            }
+                        }
+
+                        @media (min-width: 1023px) and (max-width: 1025px) {
+                            overflow-y: auto;
+
+                            &::-webkit-scrollbar {
+                                width: 0;
+                            }
+                        }
+
+                        @media (min-width: 1025px) and (max-width: 1439px) {
+                            margin: 0 24px;
+                            margin-bottom: 24px;
+                            overflow-y: auto;
+                            min-width: 200px;
+                        }
+
+                        @media (max-width: $phone) {
+                            height: 72px;
+                            overflow: auto;
+                            min-width: auto;
+
+                            &::-webkit-scrollbar {
+                                width: 1px;
+                            }
+
+                            @media (min-width: 374px) and (max-width: 376px) {
+                                overflow-y: auto;
+
+                                &::-webkit-scrollbar {
+                                    width: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.subtitle {
+    margin: 0 24px;
+}
+
+@media (min-width: 1440px) and (max-width: 1441px) {
+    .container-carroussel {
+        .container-row {
+            height: 462px;
+
+            .card {
+                min-width: 279px;
+            }
+        }
+    }
+}
