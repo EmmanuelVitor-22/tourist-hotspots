@@ -5,25 +5,25 @@ export class TouristSpots {
                 imageCard: "../img/cristo.jpg",
                 titleCard: "Cristo Redentor",
                 descriptionCard:
-                    "Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa amet sint. Velit officia consece duis enim velit mollit.",
+                    "Imagem do Cristo redentor",
             },
             {
                 imageCard: "../img/museu-do-louvre.jpg",
                 titleCard: "Museu do Louvre",
                 descriptionCard:
-                    "Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa amet sint. Velit officia consece duis enim velit mollit.",
+                    "Imagem do museu do louvre a noite.",
             },
             {
                 imageCard: "../img/partenon.jpg",
                 titleCard: "Partenon",
                 descriptionCard:
-                    "Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa amet sint. Velit officia consece duis enim velit mollit.",
+                    "Imagem do Partenon ",
             },
             {
                 imageCard: "../img/torre-eiffel.jpg",
                 titleCard: "Torre Eiffel",
                 descriptionCard:
-                    "Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa amet sint. Velit officia consece duis enim velit mollit.",
+                    "Imagem da Torre Eiffel ",
             },
         ];
 
