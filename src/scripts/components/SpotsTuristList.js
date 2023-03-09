@@ -5,7 +5,7 @@ export class TouristSpots {
                 imageCard: "../img/cristo.jpg",
                 titleCard: "Cristo Redentor",
                 descriptionCard:
-                    "Erigido entre os anos 447 e 438 a.C. na Acrópole, o Partenon é um dos monumentos mais importantes da antiga civilização grega, além do edifício mais representativo de toda Grécia. \nConsagrado à deusa Atena Parthenos, o Partenon é um dos principais templos de construção dórica que se conservam, e também é o maior dos monumentos criados durante a época de Péricles."
+                    "O monumento Cristo Redentor é uma famosa estátua de Jesus Cristo localizada no Rio de Janeiro, no morro do Corcovado. É um símbolo do cristianismo no Brasil que representa paz e amor. "
             },
             {
                 imageCard: "../img/museu-do-louvre.jpg",
@@ -17,13 +17,13 @@ export class TouristSpots {
                 imageCard: "../img/partenon.jpg",
                 titleCard: "Partenon",
                 descriptionCard:
-                    "Imagem do Partenon ",
+                "Erigido entre os anos 447 e 438 a.C. na Acrópole, o Partenon é um dos monumentos mais importantes da antiga civilização grega, além do edifício mais representativo de toda Grécia. "
             },
             {
                 imageCard: "../img/torre-eiffel.jpg",
                 titleCard: "Torre Eiffel",
                 descriptionCard:
-                    "Imagem da Torre Eiffel ",
+                    'A Torre Eiffel é uma torre de treliça de ferro forjado no Champ de Mars, em Paris, França. Tem o nome do engenheiro Gustave Eiffel, cuja empresa projetou e construiu a torre.'
             },
         ];
 

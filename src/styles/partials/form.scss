@@ -178,7 +178,7 @@
             }
 
             .btn-form-submit {
-                background-color: $red-200;
+                background-color: $button;
                 padding: 16px 20px;
                 color: $white;
                 font-weight: 700;
@@ -187,6 +187,10 @@
                 border: none;
                 height: 56px;
                 width: 121px;
+
+                &:hover {
+                    opacity: .9;
+                }
 
                 @media (min-width: $full) {
                     font-size: 32px;
