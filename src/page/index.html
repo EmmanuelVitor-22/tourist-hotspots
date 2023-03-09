@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="shortcut icon" sizes="16x16" href="https://m3ecommerce.com/wp-content/themes/M3%20Ecommerce/assets/img/favicon-m3-16.png">        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pontos Turísticos</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        />
+        <link rel="stylesheet" href="main.css" />
+    </head>
+
+    <body>
+        <main>
+            <section class="tourist-spots-container">
+                <h1 data-test="title-form" class="title-form">Adicionar um Ponto Turístico</h1>
+                <form class="form">
+                    <div class="container-form-inputs">
+                        <div data-test="input-image" class="container-input-image">
+                            <label for="imagem-input" class="label-image"> Imagem </label>
+                            <label for="imagem-input">
+                                <img class="preview" src="" />
+                            </label>
+
+                            <input
+                                id="imagem-input"
+                                class="form-imagem-input"
+                                type="file"
+                                name="imagem-input"
+                                placeholder="Imagem"
+                                accept="image/*"
+                                required
+                            />
+                        </div>
+                        <div class="form-inputs">
+                            <input
+                                data-test="input-titulo"
+                                class="input-text-title"
+                                type="text"
+                                placeholder="Titulo"
+                                required
+                            />
+                            <textarea
+                                data-test="input-descrição"
+                                class="text-area-description"
+                                placeholder="Descrição"
+                                cols="30"
+                                rows="10"
+                                required
+                            ></textarea>
+                            <div class="form-button">
+                                <button
+                                    data-test="button-submit"
+                                    class="btn-form-submit"
+                                    type="submit"
+                                >
+                                    Adicionar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <section class="container-carroussel">
+                    <h2 data-test="title-list" class="carroussel-title">Pontos Turísticos</h2>
+                    <ul data-test="container-item-list" class="container-row"></ul>
+                </section>
+            </section>
+        </main>
+        <!-- importacao cdn SLICK -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        ></script>
+        <script type="module" src="bundle.js"></script>
+    </body>
+</html>
